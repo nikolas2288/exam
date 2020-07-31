@@ -459,5 +459,9 @@
 }
 
 .footer__bottom {
-    padding: 57px 0;
+    padding: 57px 20px;
+}
+
+.footer__bottom img {
+    max-width: 100%;
 }
