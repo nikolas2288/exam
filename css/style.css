@@ -24,6 +24,7 @@
     font-family: 'Rounded Elegance', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    letter-spacing: -1px;
 
     border-radius: 100px;
     border: 2px solid #2196F3;
@@ -247,6 +248,10 @@
 
 /* col */
 
+.block__box {
+    margin-bottom: 78px;
+}
+
 .box {
     min-width: 277px;
     min-height: 520px;
@@ -387,6 +392,7 @@
 
 .footer__top {
     background: #F5F5F5;
+    /* margin-bottom: 20px; */
 }
 
 .hr__footer--one {
@@ -422,6 +428,11 @@
     margin-top: 17px;
 }
 
+
+.logo__footer {
+    margin-top: 55px;
+}
+
 .logo__footer:hover {
     border: 2px solid #F5F5F5;
 }
@@ -429,4 +440,24 @@
 .footer__bottom {
     background: #EFEFEF;
     text-align: center;
+}
+
+.paragraf__block {
+    margin-top: 42px;
+}
+
+.footer__img {
+    margin: 15px 0 0 54px;
+}
+
+.footer__phone {
+    margin: 68px 0 0 97px;
+}
+
+.footer__top {
+    padding: 12px 0;
+}
+
+.footer__bottom {
+    padding: 57px 0;
 }
