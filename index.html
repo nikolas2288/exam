@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://kit.fontawesome.com/82557483a6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,44 +20,51 @@
 
             <!-- 1 -->
 
-            <div class="block__navigation">
-                <a href="#"><input type="submit" value="Logo" class="logo"></a>
-                <div class="block__between">
-                    <a href="tel:+ 380 73 15 32 20" class="phone">
-                        <i class="fas fa-phone-alt font__a"></i>
-                        + 380 73 15 32 20
-                    </a>
+            <header class="header__navigation">
+                <a href="#">
+                    <input type="submit" value="Logo" class="logo">
+                </a>
 
-                    <button class="basket">
-                        <span>Корзина</span>
+                <div class="right__block--between">
 
-                        <i class="fas fa-shopping-basket font__b"></i>
+                    <div class="phone--call">
+                        <a href="tel:+ 380 73 15 32 20" class="phone">
+                            <i class="fas fa-phone-alt font__a"></i>
+                            + 380-000-000-000
+                        </a>
+                    </div>
 
-                        <div class="info__bar">
-                            <span>0</span>
-                        </div>
-
-                    </button>
+                    <div class="basket--button">
+                        <button class="basket">
+                            <span class="basket--text">
+                                Корзина
+                            </span>
+                            <span class="basket--icon">
+                                <i class="fas fa-shopping-basket basket--icon-i"></i>
+                            </span>
+                            <div class="basket--zero">
+                                <span class="zero">0</span>
+                            </div>
+                        </button>
+                    </div>
 
                 </div>
-            </div>
+            </header>
 
             <!-- 2 -->
 
             <p class="title">Введи название препарата в строку ниже</p>
-            <div class="row">
-                <div class="col-7 offset-2">
-                    <i class="fas fa-search icon__search"></i>
-                    <input type="text" class="text" placeholder="Введите название препарата">
-                </div>
-                <div>
-                    <button class="submit">Найти</button>
+            <div class="col-8 col-md-8 col-sm-8 col-lg-8 offset-md-2 offset-lg-2 offset-sm-2 offset-2">
+                <div id="searchinput" class="search__input">
+                    <i id="icon" class="fas fa-search icon__search"></i>
+                    <input id="search" type="text" class="text" placeholder="Введите название препарата">
+                    <button id="button" class="submit">Найти</button>
                 </div>
             </div>
 
             <!-- 3 -->
 
-            <div class="block__three">
+            <section class="block__three">
                 <img src="img/Group 171.png" alt="">
                 <div class="block--img">
                     <div class="block__img--one">
@@ -71,398 +80,417 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- col -->
 
-            <h2 class="title">Акционные товары</h2>
-            <div class="block__box">
-                <div class="row">
-
-
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
+            <section class="section__table--preserves">
+                <h2 class="title">Акционные товары</h2>
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-3">
+                            <div class="wrapper__box">
+                                <a href="product.html">
+                                    <div class="wrapper__box--img">
+                                        <img src="img/kalesa.png" alt="" class="box--img">
+                                        <p class="wrapper__box--name">
+                                            Хлоргексидин
+                                        </p>
                                     </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
-
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
                                 </a>
+                                <div class="wrapper__box--min">
+                                    <div class="wrapper__box--info">
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Дозировка:</p>
+                                            <p class="info__layers-span">300 мл</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                            <p class="info__layers-span">р-р 20%фл.
+                                                500 мд</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Действующее вещество:</p>
+                                            <p class="info__layers-span">Парацетамол</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Количество вещества
+                                                в составе:</p>
+                                            <p class="info__layers-span">10 мл</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="wrapper__box--price">
+                                    137 грн
+                                    <span class="wrapper__box--oldprice">167 грн</span>
+                                </p>
+                                <button class="wrapper__box--btn">
+                                    Добавить в корзину
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-3">
+                            <div class="wrapper__box">
+                                <a href="product.html">
+                                    <div class="wrapper__box--img">
+                                        <img src="img/kalesa.png" alt="" class="box--img">
+                                        <p class="wrapper__box--name">
+                                            Хлоргексидин
+                                        </p>
                                     </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
-
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
                                 </a>
+                                <div class="wrapper__box--min">
+                                    <div class="wrapper__box--info">
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Дозировка:</p>
+                                            <p class="info__layers-span">300 мл</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                            <p class="info__layers-span">р-р 20%фл.
+                                                500 мд</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Действующее вещество:</p>
+                                            <p class="info__layers-span">Парацетамол</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Количество вещества
+                                                в составе:</p>
+                                            <p class="info__layers-span">10 мл</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="wrapper__box--price">
+                                    137 грн
+                                    <span class="wrapper__box--oldprice">167 грн</span>
+                                </p>
+
+                                <button class="wrapper__box--btn">
+                                    Добавить в корзину
+                                </button>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-3">
+                            <div class="wrapper__box">
+                                <a href="product.html">
+                                    <div class="wrapper__box--img">
+                                        <img src="img/kalesa.png" alt="" class="box--img">
+                                        <p class="wrapper__box--name">
+                                            Хлоргексидин
+                                        </p>
                                     </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
-
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
                                 </a>
+                                <div class="wrapper__box--min">
+                                    <div class="wrapper__box--info">
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Дозировка:</p>
+                                            <p class="info__layers-span">300 мл</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                            <p class="info__layers-span">р-р 20%фл.
+                                                500 мд</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Действующее вещество:</p>
+                                            <p class="info__layers-span">Парацетамол</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Количество вещества
+                                                в составе:</p>
+                                            <p class="info__layers-span">10 мл</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="wrapper__box--price">
+                                    137 грн
+                                    <span class="wrapper__box--oldprice">167 грн</span>
+                                </p>
+                                <button class="wrapper__box--btn">
+                                    Добавить в корзину
+                                </button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
-                                    </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
 
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
+                        <div class="col-3 col-sm-2 col-md-3 col-lg-3">
+                            <div class="wrapper__box">
+                                <a href="product.html">
+                                    <div class="wrapper__box--img">
+                                        <img src="img/kalesa.png" alt="" class="box--img">
+                                        <p class="wrapper__box--name">
+                                            Хлоргексидин
+                                        </p>
+                                    </div>
                                 </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
+                                <div class="wrapper__box--min">
+                                    <div class="wrapper__box--info">
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Дозировка:</p>
+                                            <p class="info__layers-span">300 мл</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                            <p class="info__layers-span">р-р 20%фл.
+                                                500 мд</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Действующее вещество:</p>
+                                            <p class="info__layers-span">Парацетамол</p>
+                                        </div>
+                                        <div class="info__layers">
+                                            <p class="info__layers-paragraf">Количество вещества
+                                                в составе:</p>
+                                            <p class="info__layers-span">10 мл</p>
+                                        </div>
                                     </div>
-                                    <div class="min__block--between">300мл</div>
                                 </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
+                                <p class="wrapper__box--price">
+                                    137 грн
+                                    <span class="wrapper__box--oldprice">167 грн</span>
+                                </p>
 
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
-                                    </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
+                                <button class="wrapper__box--btn">
+                                    Добавить в корзину
+                                </button>
 
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
-                                    </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
-
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="box">
-                            <img src="img/kalesa.png" class="box--img">
-                            <h2 class="box--title">Хлоргексидин</h2>
-                            <div class="min__block">
-                                <div class="min__block--text min__block--marginone">
-                                    <div class="min__block--color ">
-                                        • <span>Дозировка:</span>
-                                    </div>
-                                    <div class="min__block--between">300мл</div>
-                                </div>
-                                <div class="min__block--text min__block--margintwo">
-                                    <div class="min__block--color ">
-                                        • <span>Форма выпуска:</span>
-                                    </div>
-                                    <div class="min__block--between">р-р 20% фл. <br>
-                                        500 мд</div>
-                                </div>
-                                <div class="min__block--text min__block--marginthree">
-                                    <div class="min__block--color ">
-                                        • <span>Действующее <br>
-                                            вещество:</span>
-                                    </div>
-                                    <div class="min__block--between">Парацетамол</div>
-                                </div>
-                                <div class="min__block--text">
-                                    <div class="min__block--color">
-                                        • <span>Количество вещества
-                                            в составе:</span>
-                                    </div>
-                                    <div class="min__block--between">10мл</div>
-                                </div>
-                            </div>
-                            <p class="box__cash">137 грн<span class="box__cash--color">167 грн</span></p>
-
-                            <div class="box__button">
-                                <a href="#">
-                                    <input type="submit" class="box__submit--button" value="Добавить в корзину">
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer__top">
-            <div class="container">
                 <div class="row">
+                    <div class="col-3 col-lg-3 col-sm-2 col-md-3">
+                        <div class="wrapper__box">
+                            <a href="product.html">
+                                <div class="wrapper__box--img">
+                                    <img src="img/kalesa.png" alt="" class="box--img">
+                                    <p class="wrapper__box--name">
+                                        Хлоргексидин
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="wrapper__box--min">
+                                <div class="wrapper__box--info">
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Дозировка:</p>
+                                        <p class="info__layers-span">300 мл</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                        <p class="info__layers-span">р-р 20%фл.
+                                            500 мд</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Действующее вещество:</p>
+                                        <p class="info__layers-span">Парацетамол</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Количество вещества
+                                            в составе:</p>
+                                        <p class="info__layers-span">10 мл</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="wrapper__box--price">
+                                137 грн
+                                <span class="wrapper__box--oldprice">167 грн</span>
+                            </p>
 
-                    <div class="col-2">
-                        <a href="#"><input type="submit" value="Logo" class="logo logo__footer"></a>
-                    </div>
+                            <button class="wrapper__box--btn">
+                                Добавить в корзину
+                            </button>
 
-                    <div class="col-3">
-                        <div class="paragraf__block">
-                            <p class="paragraf__footer paragraf__footer--one">Политика конфиденциальности</p>
-                            <hr class="hr__footer--one">
-                            <p class="paragraf__footer paragraf__footer--two">Правила доставки препаратов</p>
                         </div>
                     </div>
+                    <div class="col-3 col-lg-3 col-sm-2 col-md-3">
+                        <div class="wrapper__box">
+                            <a href="product.html">
+                                <div class="wrapper__box--img">
+                                    <img src="img/kalesa.png" alt="" class="box--img">
+                                    <p class="wrapper__box--name">
+                                        Хлоргексидин
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="wrapper__box--min">
+                                <div class="wrapper__box--info">
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Дозировка:</p>
+                                        <p class="info__layers-span">300 мл</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                        <p class="info__layers-span">р-р 20%фл.
+                                            500 мд</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Действующее вещество:</p>
+                                        <p class="info__layers-span">Парацетамол</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Количество вещества
+                                            в составе:</p>
+                                        <p class="info__layers-span">10 мл</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="wrapper__box--price">
+                                137 грн
+                                <span class="wrapper__box--oldprice">167 грн</span>
+                            </p>
 
-                    <div class="col-2">
-                        <div class="paragraf__block">
-                            <p class="paragraf__footer paragraf__footer--one">Каталог препаратов</p>
-                            <hr class="hr__footer--two">
-                            <p class="paragraf__footer paragraf__footer--two">Контакты</p>
-                            </di>
+                            <button class="wrapper__box--btn">
+                                Добавить в корзину
+                            </button>
+
                         </div>
                     </div>
-                    <div class="col-2">
-                        <img class="footer__img" src="img/Frame231.png" alt="">
-                    </div>
+                    <div class="col-3 col-lg-3 col-sm-2 col-md-3">
+                        <div class="wrapper__box">
+                            <a href="product.html">
+                                <div class="wrapper__box--img">
+                                    <img src="img/kalesa.png" alt="" class="box--img">
+                                    <p class="wrapper__box--name">
+                                        Хлоргексидин
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="wrapper__box--min">
+                                <div class="wrapper__box--info">
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Дозировка:</p>
+                                        <p class="info__layers-span">300 мл</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                        <p class="info__layers-span">р-р 20%фл.
+                                            500 мд</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Действующее вещество:</p>
+                                        <p class="info__layers-span">Парацетамол</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Количество вещества
+                                            в составе:</p>
+                                        <p class="info__layers-span">10 мл</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="wrapper__box--price">
+                                137 грн
+                                <span class="wrapper__box--oldprice">167 грн</span>
+                            </p>
 
-                    <div class="col-3">
-                        <div class="footer__phone">
-                            <a href="tel:+ 380 73 15 32 20" class="phone phone--footer">
-                                <i class="fas fa-phone-alt font__a"></i>
-                                + 380 73 15 32 20
+                            <button class="wrapper__box--btn">
+                                Добавить в корзину
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-3 col-sm-2 col-md-3">
+                        <div class="wrapper__box">
+                            <a href="product.html">
+                                <div class="wrapper__box--img">
+                                    <img src="img/kalesa.png" alt="" class="box--img">
+                                    <p class="wrapper__box--name">
+                                        Хлоргексидин
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="wrapper__box--min">
+                                <div class="wrapper__box--info">
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Дозировка:</p>
+                                        <p class="info__layers-span">300 мл</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf ">Форма выпуска:</p>
+                                        <p class="info__layers-span">р-р 20%фл.
+                                            500 мд</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Действующее вещество:</p>
+                                        <p class="info__layers-span">Парацетамол</p>
+                                    </div>
+                                    <div class="info__layers">
+                                        <p class="info__layers-paragraf">Количество вещества
+                                            в составе:</p>
+                                        <p class="info__layers-span">10 мл</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="wrapper__box--price">
+                                137 грн
+                                <span class="wrapper__box--oldprice">167 грн</span>
+                            </p>
+
+                            <button class="wrapper__box--btn">
+                                Добавить в корзину
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer__block">
+            <div class="footer__block--top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#">
+                                <input type="submit" value="Logo" class="logo footer--logo">
                             </a>
                         </div>
+                        <div class="col-3">
+                            <p class="footer--paragraf footer__paragraf--top"><a class="footer--link" href="#">Политика
+                                    конфиденциальности</a>
+                            </p>
+                            <hr class="footer--hr footer__hr--left">
+                            <p class="footer--paragraf"><a class="footer--link" href="#">Правила доставки препаратов</a>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="footer--paragraf footer__paragraf--top"><a class="footer--link" href="#">Каталог
+                                    препаратов</a></p>
+                            <hr class="footer--hr footer__hr--right">
+                            <p class="footer--paragraf"><a class="footer--link" href="#">Контакты</a></p>
+                        </div>
+                        <div class="col-2">
+                            <img src="img/vase.png" alt="" class="footer--img">
+                        </div>
+                        <div class="col-3">
+                            <div class="phone--call footer--phone">
+                                <a href="tel:+ 380 73 15 32 20" class="phone">
+                                    <i class="fas fa-phone-alt font__a"></i>
+                                    + 380-000-000-000
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-    </footer>
-    <footer class="footer__bottom">
-        <img src="img/footerfontimg.png" alt="">
-    </footer>
+
+            <div class="footer__block--bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="img/footerfontimg.png" alt="" class="footer__img--dawn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
